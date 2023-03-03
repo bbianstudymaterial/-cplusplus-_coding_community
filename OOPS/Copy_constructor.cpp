@@ -6,10 +6,6 @@ class Rectangle
        int length;
        int breadth;
     public:
-      //  Rectangle(){
-      //    length = 1;
-      //    breadth = 1;
-      //  }
        Rectangle(int l=1, int b=1){
         setLength(l);
         setBreadth(b);
@@ -48,10 +44,8 @@ class Rectangle
        }
 };
 int main(void) {
-   Rectangle r1;
-   Rectangle r2(r1);;
+   
+   Rectangle r1(10,5);
+   Rectangle r2(r1);
    cout<<r2.area()<<endl;
-   Rectangle r3(10,5);
-   Rectangle r4(r3);
-   cout<<r4.area()<<endl;
 }
